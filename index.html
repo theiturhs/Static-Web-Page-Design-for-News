@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>News</title>
+</head>
+<body>
+    <div class="header">
+        <div class="name">
+            news&News
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search"><span class="glyphicon glyphicon-search"></span>
+        </div>
+        <div class="user" id="account" onclick="openNav()">
+            <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div class="profile" id="profileList">
+            <ul>
+                <li><a href="#" onclick="closeNav()">HOME</a></li>
+                <li><a href="#" onclick="closeNav()">FAVOURITES</a></li>
+                <li><a href="#" onclick="closeNav()">PRIVACY</a></li>
+                <li><a href="#" onclick="closeNav()">SETTINGS</a></li>
+                <li><a href="#" onclick="closeNav()">LOG OUT</a></li>
+            </ul>
+            <div id="remove" onclick="closeNav()">
+                <span class="glyphicon glyphicon-remove"></span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="leftList">
+            <div class="leftListContent" id="lists">
+                <div id="rightArrow">
+                    <span class="glyphicon glyphicon-menu-right" onclick="showleft()"></span>
+                </div>
+                <div id="leftArrow">
+                    <span class="glyphicon glyphicon-menu-left" onclick="showright()"></span>
+                </div>
+                <ul>
+                    <li><span class="glyphicon glyphicon-globe"></span><a href="#">Top News</a></li>
+                    <li><span class="glyphicon glyphicon-bookmark"></span><a href="#">Bookmarked</a></li>
+                    <li><span class="glyphicon glyphicon-star"></span><a href="#">Following</a></li>
+                    <li><span class="glyphicon glyphicon-tags"></span><a href="#">Tags</a></li>
+                    <hr>
+                    <li><span class="glyphicon glyphicon-flag"></span><a href="#">National</a></li>
+                    <li><span class="glyphicon glyphicon-plane"></span><a href="#">International</a></li>
+                    <li><span class="glyphicon glyphicon-map-marker"></span><a href="#">Local</a></li>
+                    <li><span class="glyphicon glyphicon-signal"></span><a href="#">Technology</a></li>
+                    <li><span class="glyphicon glyphicon-education"></span><a href="#">Education</a></li>
+                    <li><span class="glyphicon glyphicon-plus-sign"></span><a href="#">Health</a></li>
+                    <hr>
+                    <li><span class="glyphicon glyphicon-cog"></span><a href="#">Settings</a></li>
+                    <li><span class="glyphicon glyphicon-off"></span><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="newsBox">
+                <h3>Qwerty</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="newsBox">
+                <h3>Qwerty Qwerty</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="newsBox">
+                <h3>Qwerty</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="newsBox">
+                <h3>Qwerty II</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="newsBox">
+                <h3>Qwerty Qwerty II</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="rightNews">
+            <div class="temp">
+                <div class="tempLeft">
+                    <span class="glyphicon glyphicon-map-marker"></span> Location
+                </div>
+                <div class="tempRight">
+                    84° F <span class="glyphicon glyphicon-cloud"></span>
+                </div>
+            </div>
+            <div class="mostSearch">
+                <h3>Most Searched</h3>
+                <ul>
+                    <li><a href="#">HEALTH</a></li>
+                    <li><a href="#">TECHNOLOGY</a></li>
+                    <li><a href="#">FOOD</a></li>
+                    <li><a href="#">TEMPERATURE</a></li>
+                    <li><a href="#">BUILDING</a></li>
+                    <li><a href="#">ROADS</a></li>
+                    <li><a href="#">CHIP</a></li>
+                    <li><a href="#">SATELLITE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
